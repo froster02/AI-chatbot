@@ -16,3 +16,11 @@ const PORT = 5002;
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
+
+// server.js (in backend)
+app.post('/chat', (req, res) => {
+    const { userQuery } = req.body;
+    console.log("Received query:", userQuery);
+    // For now, just respond with a test message
+    res.json({ reply: `You said: ${userQuery}` });
+});

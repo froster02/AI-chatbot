@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/froster02/AI-chatbot/issues"
   },
-  "homepage": "https://github.com/froster02/AI-chatbot#readme"
+  "homepage": "https://github.com/froster02/AI-chatbot#readme",
+  "dependencies": {
+    "axios": "^1.7.9"
+  }
 }
