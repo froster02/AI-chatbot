@@ -1,6 +1,30 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+/**
+ * Main application component that provides a chat interface with dark/light theme support.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered App component
+ * 
+ * @state {string} inputValue - Stores the current value of the chat input field
+ * @state {string} response - Stores the response from the server
+ * @state {boolean} isDarkMode - Controls whether dark or light theme is active
+ * 
+ * @example
+ * return (
+ *   <App />
+ * )
+ * 
+ * @description
+ * The App component includes:
+ * - Theme switching functionality between dark and light modes
+ * - Chat input field with submit button
+ * - Response display area with code block formatting
+ * - Fixed header with theme toggle
+ * - Fixed footer with GitHub link
+ * - Responsive design with custom styling
+ */
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [response, setResponse] = useState('');
@@ -37,7 +61,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       // Send the user's input to the backend
-      const res = await axios.post('https://your-backend-url.com/chat', {
+      const res = await axios.post('http://localhost:5002/chat', {
         userQuery: inputValue
       });
       // We'll store the response in the "response" state
