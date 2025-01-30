@@ -321,7 +321,7 @@ function App() {
         boxShadow: '0 -1px 3px rgba(0, 0, 0, 0.1)'
       }}>
         <a
-          href="https://github.com/arushnaudiyal/AI-chatbot"
+          href="https://github.com/froster02/AI-chatbot.git"
           target="_blank"
           rel="noopener noreferrer"
           style={{
