@@ -11,6 +11,8 @@ app.post('/chat', async (req, res) => {
     try {
         const { userQuery } = req.body;
         const apiKey = process.env.TOGETHER_API_KEY;
+        const cors = require('cors');
+        app.use(cors());
 
         console.log('Sending request to Together.ai...');
         const response = await axios.post(
