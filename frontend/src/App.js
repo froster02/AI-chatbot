@@ -61,7 +61,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       // Send the user's input to the backend
-      const res = await axios.post('http://localhost:5002/chat', {
+      const res = await axios.post('https://satisfying-wobbly-wasabi.glitch.me', {
         userQuery: inputValue
       });
       // We'll store the response in the "response" state
